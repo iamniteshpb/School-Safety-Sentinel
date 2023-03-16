@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>MONITORING SCHOOL SAFETY</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout inner_page">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+   <header class="full_bg">
+      <!-- header inner -->
+      <div class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img
+                                 src="data:image/png;base64,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"
+                                 alt="Bit logo" style="float:left;width:3000px;height:60px;"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item ">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about.html">About</a>
+                           </li>
+                           <li class="nav-item active">
+                              <a class="nav-link" href="service.html">Service</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="blog.html">Blog</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact Us</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <ul class="search">
+                        <li><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+   </header>
+   <!-- end banner -->
+   <div class="back_re">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="title">
+                  <h2 style="font-size:200%;">WITH RESPECT TO DoSEL(Department of Student Education & Literacy)</style>
+                  </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- our plane -->
+   <div class="plane">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="titlepage">
+                  <h2>Our Plane</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="plan_bax text_align_center">
+                  <figure><img src="https://logodix.com/logo/871293.png" alt="#" /></figure>
+                  <div id="ho_plan" class="plan_text">
+                     <h3>STUDENT INFORMATION PORTAL</h3>
+                     <p>The Student Information Portal is the hub for all your personal student information, the courses
+                        you are registered in,
+                        your grades, your financial statements, your scholarship application, and much more. It contains
+                        all the information in digital format.</p>
+                     <a href="http://localhost/make%20video/Student%20information%20portal" target="_blank"><b>CLICK
+                           HERE!</b></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="plan_bax text_align_center">
+                  <figure><img
+                        src="https://th.bing.com/th/id/OIP.tUKyVl4uh9FC2d9g9auRrQAAAA?w=149&h=150&c=7&r=0&o=5&pid=1.7"
+                        alt="#" /></figure>
+                  <div id="ho_plan" class="plan_text">
+                     <h3>SCHOOL MANAGEMENT COMPLAINT PORTAL</h3>
+                     <p>If you file a complaint with the school, the principal is required by law to investigate and fix
+                        the problem. Your school, including teachers and administrators, is required by law to protect
+                        you and must take the necessary steps to stop any form of bullying.</p>
+                     <a href="http://localhost/make%20video/complaint%20registration%20portal/" target="_blank"><b>CLICK
+                           HERE!</b></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="plan_bax text_align_center">
+                  <figure><img
+                        src="https://assets-homepages-learning.3plearning.net/wp-content/uploads/2020/04/blog-navigate-tricky-parent-teacher-meeting-like-pro.png"
+                        alt="#" />
+                  </figure>
+                  <div id="ho_plan" class="plan_text">
+                     <h3>PARENTS-TEACHERS PORTAL</h3>
+                     <p>Parents-Teacher portal is an opportunity for parents and teachers to discuss what's happening at
+                        school and at home. Ideally, an open and honest dialogue between parent and teacher can affect
+                        change for the better in your child's life.</p>
+                     <a href="http://localhost/make%20video/Parents%20teachers%20portal/chat_system/"
+                        target="_blank"><b>CLICK HERE!</b></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="plane">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="titlepage">
+                  <h2>Our Plane</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="plan_bax text_align_center">
+                  <figure><img
+                        src="https://th.bing.com/th/id/R.528d2664d716a05abad2bb9d5d8857d8?rik=6ddVvpvcaytLWw&riu=http%3a%2f%2fwww.theunbiasedblog.com%2fwp-content%2fuploads%2f2014%2f05%2fwpid-internet-hosting.jpg&ehk=IvN93sE%2fXW6SHhkA71xNTkck9dJduEzKa8DNonZ7FcI%3d&risl=&pid=ImgRaw&r=0"
+                        alt="#" /></figure>
+                  <div id="ho_plan" class="plan_text">
+                     <h3>FEES PAYMENT ANALYSIS</h3>
+                     <p>A secured credit card is a type of credit card that is backed by a cash deposit from the
+                        cardholder. This deposit acts as collateral on the account, providing the card issuer with
+                        security in case the cardholder can't make payments.</p>
+                     <a href="http://localhost/make%20video/Student%20fees%20payment%20analysis/login.php"
+                        target="_blank"><b>CLICK HERE!</b></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="plan_bax text_align_center">
+                  <figure><img
+                        src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/global.jpeg?itok=yW532s2Y"
+                        alt="#" />
+                  </figure>
+                  <div id="ho_plan" class="plan_text">
+                     <h3>STUDENT SUPERVISION SYSTEM</h3>
+                     <p>This system is intended to ease the burden on administration duties for managing the office
+                        staff in processing Supervision and Management by making information retrieval and management
+                        faster, easier, and more efficient compared to the normal manual system. Itinclude a set of
+                        tools and methods for the control of industrial processes.</p>
+                     <a href="http://localhost/make%20video/Supervision-System-master/New/" target="_blank"><b>CLICK
+                           HERE!</b></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="plan_bax text_align_center">
+                  <figure><img src="https://i.pinimg.com/originals/9c/0a/6b/9c0a6b1d8f70849fe0740a815d169142.jpg"
+                        alt="#" /></figure>
+                  <div id="ho_plan" class="plan_text">
+                     <h3>ESCALATION COMPLAINT PORTAL</h3>
+                     <p>With the aid of an app that hides the identity of the person who escalates the issue,
+                        difficulties in schools can be brought to the attention of the district and state by the school,
+                        students, teachers, and parents.
+                     </p>
+                     <a
+                        href="http://localhost/make%20video/Complaint%20registration%20portal%20for%20district%20and%20state%20level%20authorities/"><b>CLICK
+                           HERE!</b></a>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- our plane -->
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <p>© 2022 All Rights Reserved. <a href="https://html.design/"></a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>
